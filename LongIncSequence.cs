@@ -5,7 +5,7 @@ namespace LongestIncreasingSequence {
 
   internal class LongIncSequence {
     // This is the function to find the longest increasing subsequence from the input sequence
-    internal List < int > FindLongIncSequence(int[] inpSeqArray) {
+    internal List <int> FindLongIncSequence(int[] inpSeqArray) {
       // calculating input array length
       int inpArrayLength = inpSeqArray.Length;
 
@@ -45,7 +45,7 @@ namespace LongestIncreasingSequence {
       }
 
       // Construct the output longest incresing sequence using seq array
-      List < int > longIncSeqList = new List < int > ();
+      List <int> longIncSeqList = new List <int> ();
       longIncSeqList.Add(inpSeqArray[ansInd]);
       while (seqArray[ansInd] != ansInd) {
         ansInd = seqArray[ansInd];
